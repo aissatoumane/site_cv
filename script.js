@@ -51,3 +51,6 @@ $(window).scroll(function() {
         compteur = 1;
     }
 });
+
+//  AOS - Animate On Scroll
+AOS.init();
