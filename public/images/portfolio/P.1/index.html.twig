@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	La Crise de la Vingtaine
+{% endblock %}
+
+{% block body %}
+	<br>
+	<br>
+
+	<div id="accueil">
+		<h5 id="bonjour">
+			Bonjour !
+		</h5>
+		<p> Bienvenue sur <b>LCLV - La Crise de la Vingtaine</b>, <br> plateforme dédiée aux <b>étudiants et jeunes diplômés <br> s’interrogeant sur le choix de leurs études et/ou envisageant une reconversion professionnelle.</b>
+			<br>
+			<br>
+			<br>
+
+			Sur LCLV, tu auras accès à :
+			<br>
+			<br>
+
+<section>
+<div id="stackable" class="ui three doubling stackable cards">
+		<div class="image">
+			<img id="newspaper" src="assets/css/images/newspaper.jpg" alt="">
+		</div>
+
+		<div class="content">
+			<div class="ui placeholder">
+				<div class="header">
+					<p id="actualités"> des actualités et des analyses (articles, ouvrages, revues …) sur l’orientation scolaire post bac et le monde du travail</p>
+				</div>
+			</div>
+		</div>
+		<div class="extra content">
+			<a class="ui teal button" id="bouton-blog" href="#"> BLOG </a>
+		</div>
+</div>
+
+<div id="stackable" class="ui three doubling stackable cards">
+		<div class="image">
+			<img id="coaching" src="assets/css/images/coaching.jpg" alt="">
+		</div>
+
+		<div class="content">
+			<div class="ui placeholder">
+				<div class="header">
+					<p id="coaching">la possibilité de réserver des <b>séances de coaching</b> dont le programme sera établi en fonction de ta situation</p>
+				</div>
+			</div>
+		</div>
+		<div class="extra content">
+			<a class="ui teal button" id="bouton-coaching" href="#"> COACHING </a>
+		</div>
+</div>
+
+</section>
+		
+			<br>
+			<br>
+			<br>
+			<br>
+			<b>
+				<p>LCLV est fait pour toi si</b>
+			<br>
+			<br>
+
+<section>
+			<div class="uk-animation-toggle" tabindex="0">
+				<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+					<p class="uk-text-center">Tu souhaites découvrir <br> une autre approche <br> du monde du travail</p>
+				</div>
+			</div>
+
+			<div class="uk-animation-toggle" tabindex="0">
+				<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+					<p class="uk-text-center">Les analyses et réflexions <br> d’une jeune issue <br> de la génération Y t’inspirent</p>
+				</div>
+			</div>
+
+			<div class="uk-animation-toggle" tabindex="0">
+				<div class="uk-card uk-card-default uk-card-body uk-animation-scale-up">
+					<p class="uk-text-center">Tu souhaites intégrer <br> un espace d’échanges <br> où la notion de communauté <br> prend tout son sens</p>
+				</div>
+			</div>
+
+			<br>
+			<br>
+</section>
+
+			<br>
+			<br>
+			</p>
+
+			<p>Tu es emballé(e) par le concept ? Réserve un appel gratuit ou inscris toi dès à présent via ce lien !
+			<br>
+			<a class="ui teal button" id="bouton-appel" href="#"> 
+			Réserver un appel de 30min gratuit </a> &nbsp &nbsp
+			<a class="ui teal button" id="bouton-LCLV" href="{{ path('app_register') }}"> 
+			M'inscrire à LCLV
+			</a>
+
+			<br>
+			<br>
+
+			Tu as besoin d’encore un peu de temps pour y réfléchir ? <br>
+			Aucun problème, tu peux jeter un oeil aux différents services auxquels tu pourras accéder sur la plateforme
+			<br>
+			<a class="ui teal button" id="bouton-visio" href="{{ path('services') }}"> ACCOMPAGNEMENT ORIENTATION SCOLAIRE /<br> RECONVERSION PROFESSIONNELLE </a>
+		</p>
+	</div>
+	
+{% endblock %}
