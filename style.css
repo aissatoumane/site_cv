@@ -279,3 +279,141 @@ h4 {
     padding-right: 0;
 }
 
+/* PORTFOLIO */
+#portfolio {
+    margin: 100px 2% 0 2%;
+    padding: 40px 10px 60px 40px;
+    background-color: rgba(179, 172, 167, 0.08);
+    box-shadow: 0px 0px 1px #a8a8a9;
+}
+
+#portfolio h3 {
+    font-size: 3em; /* permet de faire un titre 3 fois plus grand que le H3 normal */
+    padding-bottom: 15px;
+}
+
+.projet {
+    display: flex; /* permet au texte de se mettre à côté de l'image */
+}
+
+.projet:nth-child(2) {
+    margin-left: 3%; /* quelle que soit la taille de l'écran, la marge sera de 3% */
+}
+
+.projet:nth-child(3) {
+    margin-left: 6%; 
+}
+
+.cadre {
+    position: relative;
+    padding: 40px 20px 25px 0;
+    width: 60%;
+    max-width: 600px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin: 10px 8px;
+    color: #aca49c;
+    text-align: center;
+}
+
+.img-container { /* concerne la photo et son cadre */
+    height: 250px;
+    width: 90%;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 0 auto; /* permet à l'image de se centrer dans sa div / son conteneur */
+    box-shadow: 1px 1px 10px #111;
+}
+
+.img-container img { /* ne concerne que la photo */
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.img-container:hover img { /* quand on survole la photo */
+    transform: scale(1); /* permet de faire grossir l'élément */
+    transform-origin: 50% 50%; /* permet de faire grossir l'élément en le laissant centré */
+    filter: contrast(140%);
+    transition: 0.3s ease-in-out; /* permet de contrôler la vitesse de la transition (ici, elle sera moins rapide) */
+}
+
+.cadre:before, .cadre:after {
+    content: '';
+    display: block;
+    position: absolute; /* va permettre de positionner l'élément comme on veut dans son conteneur */
+    width: 20%;
+    height: 20%;
+    border: 1px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+    z-index: -1; /* ce sera le dernier élément */
+}
+
+.cadre:before {
+    top: 15px;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.cadre:after {
+    bottom: 0px;
+    right: 15px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.cadre:hover:before, .cadre:hover:after {
+    border-color: #aca49c;
+    width: 100%;
+    height: 100%;
+}
+
+.legende {
+    max-width: 350px;
+    padding: 50px 0 0 20px;
+    opacity: 0;    
+    transition: 0.5s ease;
+}
+
+.projet:hover .legende { /* lorsqu'on va survoler l'image, la légende va s'afficher */ 
+    opacity: 1;
+    transition: 2s ease;
+}
+
+.legende a {
+    padding: 16px 10px 10px 10px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    float: right;
+    border-radius: 3px;
+    background-color: #e2dedb;
+    animation: scale-up-hor-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.legende a:active {
+    animation: scale-up-push 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* pour .legende a */
+@keyframes scale-up-hor-center {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+/* .legende a:active */
+@keyframes scale-up-push {
+  0% {
+    transform: scaleX(1);
+  }
+  
+  100% {
+    transform: scaleX(0.4);
+  }
+}
