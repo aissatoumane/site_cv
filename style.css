@@ -442,3 +442,70 @@ h4 {
     font: 2em;
     text-transform: uppercase;
 }
+
+/* Hobbies */
+/* Attention ; le CSS n'a pas été organisé de façon descendante (en ajoutant des propriétés aux sélecteurs de haut en bas) mais de façon à voir les résultats des animations au fur et à mesure des ajouts d'animations */
+
+#hobbies {
+    padding: 50px 50px 100px 50px;
+    margin: 100px 2% 0 2%;
+    background-color: #35B4D5;
+}
+
+#hobbies h3 {
+    text-align: center;
+    transform: rotate(3deg);
+    font-size: 3em;
+    text-shadow: -1px 1px 0px maroon;    
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+}
+
+.flip-box-back div {
+    margin: 0 auto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.flip-box-back p {
+    text-transform: uppercase;
+    padding: 10px;
+    font-size-adjust: auto; /* la taille des éléments est adaptées à la longueur de leur texte et restent dans leur conteneur */
+}
+
+.flip-box-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; 
+}
+
+.flip-box {
+    overflow: hidden; /* va empêcher les cartes de dépasser si les écrans sont très petits*/
+    background-color: transparent;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    perspective: 500px; /* créer l'effet 3D */
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
