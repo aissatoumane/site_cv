@@ -222,6 +222,7 @@ h4 {
 #xp-pro h3 {
     font-size: 2.5em;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 #xp-pro h4 {
@@ -290,6 +291,7 @@ h4 {
 #portfolio h3 {
     font-size: 3em; /* permet de faire un titre 3 fois plus grand que le H3 normal */
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .projet {
@@ -412,8 +414,31 @@ h4 {
   0% {
     transform: scaleX(1);
   }
-  
+
   100% {
     transform: scaleX(0.4);
   }
+}
+
+/* Compétences */
+#other-skills {
+    margin: 100px 2% 0 2%;
+    padding: 50px 100px 100px 100px;
+    width: 96%;
+    background-color: #375e97;
+}
+
+#other-skills h3{
+    transform: rotate(-3deg);
+    text-align: center;
+    font-size: 3em;
+    padding-top: 20px;
+    text-shadow: -1px 1px 0px maroon;
+}
+
+.cloud {
+    text-align: center;
+    padding: 50px 0;
+    font: 2em;
+    text-transform: uppercase;
 }
