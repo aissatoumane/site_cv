@@ -538,5 +538,41 @@ footer h3 {
     padding: 30px 40px;
     color: #726659;
     z-index: -1 !important;
+    border-radius: 50%;
 }
 
+.network:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+    transition: all 0.3s ease-in-out; /* pour que la transition commence doucement et finisse doucement */
+}
+
+
+
+.arrow {
+    width: 50%;
+    margin: -20 auto;
+    padding-top: 15px;
+    animation: arrow linear 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0px); /* sa forme de base, elle est à sa place au début */
+    }
+
+    38% {
+        transform: translateY(8px); /* sa forme de base, elle est à sa place au début */
+    }
+
+    100% {
+        transform: translateY(0px); /* sa forme de base, elle est à sa place au début */
+    }
+}
+
+.arrow a {
+    font-size: 3em;
+    border: none;
+    color: #726659;
+}
