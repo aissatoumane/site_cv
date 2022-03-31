@@ -510,4 +510,33 @@ h4 {
     transform: rotateY(180deg);
 }
 
+/* Footer */
+footer {
+    background: url(./public/images/footer.jpg) 50% 0% no-repeat fixed; 
+    /* contrairement au background du haut du site, on verra le bas de l'image */
+    background-size: cover;
+    /* à chaque fois qu'on met un background url en no-repeat, mettre un background-size: cover */
+    text-align: center;
+    padding: 160px 50px 5px 50px;
+}
+
+footer h3 {
+    padding: 0 0 60px 0;
+    font-size: 2.5em;
+}
+
+.footer-icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* pour que les icônes se répartissent également au niveau de la page */
+    max-width: 28%; /* permet d'indiquer un espacement maximum entre les icônes */
+}
+
+.network {
+    font-size: 4em;
+    border: 1px solid #b3aca7;
+    padding: 30px 40px;
+    color: #726659;
+    z-index: -1 !important;
+}
 
