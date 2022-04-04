@@ -550,7 +550,6 @@ footer h3 {
 
 
 .arrow {
-    width: 50%;
     margin: -20 auto;
     padding-top: 15px;
     animation: arrow linear 1.5s;
@@ -575,4 +574,15 @@ footer h3 {
     font-size: 3em;
     border: none;
     color: #726659;
+}
+
+.arrow:hover i {
+    transform: scale(1.6); /* quand on passe sur la flèche, elle grossit de 60% */
+    transition: 0.5s ease-in-out; /* pour que la flèche grossisse progressivement quand on passe dessus */
+    color: #726659;
+}
+
+footer p {
+    font-size: 0.9em;
+    letter-spacing: 0.3em;
 }
