@@ -541,13 +541,22 @@ footer h3 {
     border-radius: 50%;
 }
 
-.network:hover {
+.network:hover,textarea:hover, input:hover, #envoyer:hover {
     background: #b3aca7;
     color: #e2dedb;
     transition: all 0.3s ease-in-out; /* pour que la transition commence doucement et finisse doucement */
 }
 
+#envoyer {
+    background: transparent;
+    border: solid 1px #b3aca7;
+    padding: 20px 75px;
+    margin: 14px 0 -20px 0;
+}
 
+form {
+    padding-top: 100px;
+}
 
 .arrow {
     margin: -20 auto;
@@ -585,4 +594,44 @@ footer h3 {
 footer p {
     font-size: 0.9em;
     letter-spacing: 0.3em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+    .infos h5, typed {
+        font-size: 0.9em;
+    }
+
+    #langages {
+        margin-left: 0.2%;
+        width: 50%;
+        font-size: 0.6em;
+    }
+
+    #langages h4 {
+        font-size: 1em;
+    }
+
+    #formations {
+        width: 50%;
+        margin-right: 40%;
+    }
+
+    #formations h4 {
+        text-align: center;        
+        font-size: 0.8em;
+    }
+
+    #tp_cda h5, #tp_dam h5, #m2 h5 {
+        font-size: 0.8em;
+    }
+
+    .data {
+        font-size: 0.3em;
+    }
+    
+    .network {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
 }
