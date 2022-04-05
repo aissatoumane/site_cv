@@ -116,7 +116,7 @@ header .button:hover a {
 #langages {
     padding: 40px 80px 80px 50px;
     margin: 20px 0 0 6%;
-    height: 900px;
+    height: 700px;
     width: 70%;
     max-width: 1000px;
     background: linear-gradient(90deg,#8995c8 0%, rgba(166,179,236,0.61) 20%, #c1cbf8 40%, #dee3fe 99%);
@@ -160,7 +160,7 @@ h4 {
     float: right;
     margin-right: 1%;
     padding: 90px 0 60px 100px;
-    height: 700px;
+    height: 500px;
     width: 70%;
     max-width: 900px;
     background: linear-gradient(19deg, rgba(0,180,219,0.69) 0%, #0083b0 80%);
@@ -598,6 +598,16 @@ footer p {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px) {
+    header {
+        height: 200vh;
+        width: 98.5vh;
+    }
+
+    h1 {
+        font-size: 1em;
+        text-align: center;
+    }
+
     .infos h5, typed {
         font-size: 0.9em;
     }
