@@ -65,7 +65,8 @@ h2 {
 .presentation {
     height: 240px;
     margin-top: 20px;
-}
+    align-items: center;
+    }
 
 .infos {
     border: 1px solid #b3aca7;
@@ -73,7 +74,8 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 0;
-}
+    align-items: center;
+    }
 
 /* concerne l'image avec le cadre */
 .photo {
@@ -117,7 +119,7 @@ header .button:hover a {
     padding: 40px 80px 80px 50px;
     margin: 20px 0 0 6%;
     height: 900px;
-    width: 70%;
+    width: 90%;
     max-width: 1000px;
     background: linear-gradient(90deg,#8995c8 0%, rgba(166,179,236,0.61) 20%, #c1cbf8 40%, #dee3fe 99%);
     justify-content: center;
@@ -160,7 +162,7 @@ h4 {
     float: right;
     margin-right: 1%;
     padding: 90px 0 60px 100px;
-    height: 700px;
+    height: 800px;
     width: 70%;
     max-width: 900px;
     background: linear-gradient(19deg, rgba(0,180,219,0.69) 0%, #0083b0 80%);
@@ -525,6 +527,12 @@ footer h3 {
     font-size: 2.5em;
 }
 
+footer p {
+    font-size: 0.9em;
+    letter-spacing: 0.3em;
+}
+
+
 .footer-icons {
     margin: 0 auto;
     display: flex;
@@ -541,13 +549,32 @@ footer h3 {
     border-radius: 50%;
 }
 
-.network:hover {
+.network:hover,textarea:hover, input:hover, #envoyer:hover {
     background: #b3aca7;
     color: #e2dedb;
     transition: all 0.3s ease-in-out; /* pour que la transition commence doucement et finisse doucement */
 }
 
+.field {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
 
+.field textarea {
+    resize: none;
+}
+
+#envoyer {
+    background: transparent;
+    border: solid 1px #b3aca7;
+    padding: 20px 75px;
+    margin: 14px 0 -20px 0;
+}
+
+form {
+    padding-top: 100px;
+}
 
 .arrow {
     margin: -20 auto;
@@ -582,7 +609,85 @@ footer h3 {
     color: #726659;
 }
 
-footer p {
-    font-size: 0.9em;
-    letter-spacing: 0.3em;
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+    .infos h5, .typed {
+        font-size: 0.9em;
+    }
+
+    #langages {
+        margin-left: 1%;
+    }
+
+    #formations {
+        margin-right: 1%;
+    }
+
+    .network {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+
+    .field {
+        margin: 20px 70px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none !important;
+    }
+
+    .fixed-top {
+        position: unset !important;
+    }
+
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    #langages {
+        width: 82%;
+        margin-left: 10%;
+    }
+
+    #formations {
+        margin: 220px 0 0 10%;
+        width: 82%;
+        float: none;
+        display: block;
+    }
+
+    .counter-value {
+        font-size: 1em;
+    }
+
+    .data-span {
+        font-size: .8em;
+    }
+
+    #xp-pro {
+        margin-top: -50px; /* va permettre de remonter le bloc xp-pro */
+    }
+    
+    #other-skills h3, #hobbies h3, footer h3 {
+        font-size: 2em;
+    }
+
+    .flip-box-back p {
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    #formations {
+        padding: 90px 0 60px 30px;
+    }
+
+    #xp-pro h3 {
+        font-size: 2em;
+    }
+
+    #xp-pro h4, #xp-pro h5, #xp-pro h6 {
+        font-size: 1.5em;
+    }
 }
