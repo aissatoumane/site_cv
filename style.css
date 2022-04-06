@@ -311,7 +311,7 @@ h4 {
 .cadre {
     position: relative;
     padding: 40px 20px 25px 0;
-    width: 60%;
+    width: 80%;
     max-width: 600px;
     border: none;
     outline: none;
@@ -621,6 +621,7 @@ form {
 
     #formations {
         margin-right: 1%;
+        padding-top: 50px;
     }
 
     .network {
@@ -656,6 +657,7 @@ form {
         width: 82%;
         float: none;
         display: block;
+        padding-top: 50px;
     }
 
     .counter-value {
@@ -680,14 +682,88 @@ form {
 }
 @media screen and (max-width: 550px) {
     #formations {
-        padding: 90px 0 60px 30px;
+        padding: 50px 0 60px 30px;
     }
 
-    #xp-pro h3 {
-        font-size: 2em;
+    #xp-pro h3, #portfolio h3, #other-skills h3, #hobbies h3, footer h3 {
+        font-size: 1.5em;
     }
 
     #xp-pro h4, #xp-pro h5, #xp-pro h6 {
-        font-size: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .img-container {
+        height: 150px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .img-container img {
+        position: relative;
+        height: 80%;
+        margin: 0 auto;
+    }
+
+    .legende p {
+        display: none;
+    }
+
+    .network {
+        font-size: 1em;
+        padding: 14px 20px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    h1{
+        padding-top: 20px;
+    } 
+
+    h3 {
+        font-size: 1em !important;
+    }
+
+    #formations {
+        padding-top: 50px;
+    }
+
+    #tp_cda, #tp_dam {
+        padding: 50px 0 0 0;
+    }
+
+    .projet:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .cadre {
+        margin: 0;
+    }
+
+    .cadre:before, .cadre:after {
+        display: none;
+    }
+
+    .legende {
+        opacity: 1;
+    }
+
+    .legende p {
+        display: none;
+    }
+
+    #other-skills {
+        display: none;
+    }
+
+    .flip-box-back p {
+        font-size: 0.7em;
+        padding: 15px 0;
+    } 
+
+    .network {
+        font-size: 0.7em;
+        padding: 10px 11px;
     }
 }
